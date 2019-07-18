@@ -14,7 +14,7 @@ def dadjoke():
     if request.method == 'GET':
         return "Please use the form."
     else:
-        userdata=(request.form).to_dict()
+        userdata=request.form
         joke=getDadJoke(userdata['search'])
         return render_template('dadjoke.html',joke=joke)
 
