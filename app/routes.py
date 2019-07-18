@@ -1,6 +1,5 @@
 from app import app
 from flask import render_template, request
-from app.models import model, formopener
 from app.models.model import getDadJoke
 
 @app.route('/')
