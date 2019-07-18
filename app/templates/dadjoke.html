@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Dad Joke</title>
-        <meta charset="UTF-8">
-    </head>
-    <body>
-        <h1> Your Dad joke: </h1>
-        <h1>{{joke}}</h1>
-        <br>
-        <a href="/index">Click here to search for another dad joke.</a>
-    </body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}Dad Joke Generator{% endblock %}
+{% block content %}
+    
+<h1> Your Dad joke: </h1>
+<h1>{{joke}}</h1>
+<br>
+<a href="/index">Click here to search for another dad joke.</a>
+    
+{% endblock %}
